@@ -62,5 +62,37 @@ namespace CSC240_06_02_FiveColors2_CJ
             purpleButton.Checked = false;
             this.BackColor = Color.White;
         }
+
+        private void checkedColorCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //null
+        }
+
+        private void mergeButton_Click(object sender, EventArgs e)
+        {
+            string[] colorArray = {"Red", "Yellow", "Blue", "Green", "Purple"};
+            bool redChecked = checkedColorCombo.CheckedItems.Contains(colorArray[0]);
+            bool yellowChecked = checkedColorCombo.CheckedItems.Contains(colorArray[1]);
+            bool blueChecked = checkedColorCombo.CheckedItems.Contains(colorArray[2]);
+            bool greenChecked = checkedColorCombo.CheckedItems.Contains(colorArray[3]);
+            bool purpleChecked = checkedColorCombo.CheckedItems.Contains(colorArray[4]);
+            if (redChecked && yellowChecked)
+            {
+                mergeButton.Visible = false;
+            }
+            if (yellowChecked && blueChecked)
+            {
+                mergeButton.Visible = false;
+            }
+            if (blueChecked && greenChecked)
+            {
+                mergeButton.Visible = false;
+            }
+            if (greenChecked && purpleChecked)
+            {
+                mergeButton.Visible = false;
+            }
+
+        }
     }
 }
