@@ -10,32 +10,6 @@ namespace CSC240_06_02_FiveColors2_CJ
             InitializeComponent();
 
         }
-
-        private void blueButton_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void redButton_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void yellowButton_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void greenButton_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void purpleButton_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void resetButton_Click(object sender, EventArgs e)
         {
             checkedColorCombo.Enabled = true;
